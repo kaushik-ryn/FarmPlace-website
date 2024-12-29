@@ -1,0 +1,643 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: olive;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-side {
+            width: 50%;
+            background-image: url('https://via.placeholder.com/600x800.png?text=Farmer+Image');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .right-side {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-row label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-row input {
+            width: calc(50% - 10px);
+            padding: 10px 70px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <div class="form-container">
+                <h1>Farmer Profile</h1>
+                <form id="profile-form">
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aadhar">Aadhar Number:</label>
+                        <input type="text" id="aadhar" name="aadhar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="otp">OTP:</label>
+                        <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('profile-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const phone = document.getElementById('phone').value;
+            const aadhar = document.getElementById('aadhar').value;
+            const otp = document.getElementById('otp').value;
+
+            if (name && age && phone && aadhar && otp) {
+                alert('Profile created successfully!');
+                // Here you can add code to handle the form submission, like sending data to a server.
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
+
+    
+
+ 
+</body>
+</html> -->
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Login</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmer Login</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+    
+            .container {
+                display: flex;
+                width: 100%;
+                height: 100vh;
+            }
+    
+            .left-side, .right-side {
+                width: 50%;
+                height: 100%;
+            }
+    
+            .left-side {
+                background-image: url(https://stratovationgroup.com/wp-content/uploads/2023/11/Stock-Image-2.png);
+                background-size: cover;
+                background-position: center;
+                color: #08641e;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 20px;
+            }
+    
+            .left-side h2 {
+                color: #044b14;
+                font-weight: 800;
+                position: relative;
+                top: -268px;left: -176px;
+                font-size: 30px;
+                margin-bottom: 10px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+    
+            .left-side p {
+                font-size: 18px;
+                text-align: center;
+                max-width: 80%;
+                line-height: 1.6;
+            }
+    
+            .right-side {
+                background-color: #f9f9f9;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .form-container {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+                width: 80%;
+                animation: fadeInUp 1s ease-in-out;
+            }
+    
+            h1 {
+                text-align: center;
+               color: #08641e;
+                margin-bottom: 20px;
+            }
+    
+            .form-row {
+                display: flex;
+                justify-content: center;
+                gap: 45px;
+
+                margin-bottom: 15px;
+            }
+    
+            .form-row label {
+                display: block;
+                margin-bottom: 5px;
+                color: #555;
+            }
+    
+            .form-row input {
+                width: calc(50% - 10px);
+                padding: 10px 60px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                outline: none;
+            }
+    
+            input:focus {
+                border-color: #28a745;
+            }
+    
+            .form-group {
+                margin-bottom: 15px;
+            }
+    
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                color: #555;
+            }
+    
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                outline: none;
+            }
+    
+            button {
+                padding: 10px 60px 10px 60px;
+                width: 100%;
+                background: #08641e;
+                border: none;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background 0.3s ease;
+            }
+    
+            button:hover {
+                background: #218838;
+            }
+    
+            @keyframes fadeInUp {
+                from { transform: translateY(100%); opacity: 0; }
+                to { transform: translateY(0); opacity: 1; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <h2>Certified Agriculture</h2>
+                  </div>
+            <div class="right-side">
+                <div class="form-container">
+                    <h1>Farmer Profile</h1>
+                    <form id="profile-form">
+                        <div class="form-row">
+
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" >
+                            </div>
+                            
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Phone Num">
+                        </div>
+                        </div>
+                        
+                        <div class="verify">
+                        <div class="form-group">
+                            <label for="aadhar">Aadhar Number:</label>
+                            <input type="text" id="aadhar" name="aadhar" placeholder="Enter Aadhar Number" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otp">OTP:</label>
+                            <input type="text" id="otp" name="otp" placeholder="Enter OTP">
+                        </div>
+                        </div>
+                        
+                        <div class="verify">
+                        <div class="form-group">
+                            <label for="aadhar">Ownership Document No.</label>
+                            <input type="pdf" id="aadhar" name="aadhar" placeholder="Enter Number" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otp">KCC Document No.</label>
+                            <input type="text" id="otp" name="otp" placeholder="Enter Number" >
+                        </div>
+                        </div>
+                        
+                        <div class="verify">
+                        <div class="form-group">
+                            <label for="aadhar">Ration Card Number</label>
+                            <input type="pdf" id="aadhar" name="aadhar" placeholder="Enter Number" >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="otp">Lease Deed Number</label>
+                            <input type="text" id="otp" name="otp" placeholder="Enter Number">
+                        </div>
+                        </div>
+
+                        <div class="verify">
+                        <button type="submit">Submit</button>
+                    </form>
+                    <br>
+             <div class="button"><button><a href="Farmer-interface.html">Next</a></button></div>
+                
+                </div>
+            </div>
+        
+            </div>
+        </div>
+        <script>
+            document.getElementById('profile-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const age = document.getElementById('age').value;
+                const phone = document.getElementById('phone').value;
+                const aadhar = document.getElementById('aadhar').value;
+                const otp = document.getElementById('otp').value;
+    
+                if (name && age && phone && aadhar && otp) {
+                    alert('Profile created successfully!');
+                    // Here you can add code to handle the form submission, like sending data to a server.
+                } else {
+                    alert('Please fill in all fields.');
+                }
+            });
+        </script>
+    </body>
+    </html>
+    <style>
+    
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .verify{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 143px;
+        }
+
+        #profile-form{
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+    </style>
+    
+</body>
+</html>
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: olive;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .left-side {
+            width: 50%;
+            background-image: url('https://via.placeholder.com/600x800.png?text=Farmer+Image');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .left-side h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .left-side p {
+            font-size: 18px;
+            text-align: center;
+            max-width: 80%;
+            line-height: 1.6;
+        }
+
+        .right-side {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f9f9f9;
+        }
+
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-row label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-row input {
+            width: calc(50% - 10px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #28a745;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #28a745;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>Certified Agriculture</h2>
+            <p>Join our community of certified farmers. Access exclusive resources, connect with experts, and ensure your crops meet the highest standards.</p>
+            <p>Become part of a network that is dedicated to sustainable and profitable farming.</p>
+        </div>
+        <div class="right-side">
+            <div class="form-container">
+                <h1>Farmer Profile</h1>
+                <form id="profile-form">
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aadhar">Aadhar Number:</label>
+                        <input type="text" id="aadhar" name="aadhar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="otp">OTP:</label>
+                        <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('profile-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const phone = document.getElementById('phone').value;
+            const aadhar = document.getElementById('aadhar').value;
+            const otp = document.getElementById('otp').value;
+
+            if (name && age && phone && aadhar && otp) {
+                alert('Profile created successfully!');
+                // Here you can add code to handle the form submission, like sending data to a server.
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
+
+ -->

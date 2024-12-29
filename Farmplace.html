@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Place</title>
+
+   <script>
+    confirm("Welcome to FarmPlace")
+   </script>
+    <style>
+
+        .title-logo{
+            position: relative;
+            top: 130px;
+        
+        }
+        .title-portion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .layoutClick{
+            color: #0A5C36;
+            text-decoration: none;
+            border-color:2px solid olive;
+        }
+        .layoutClick-consumer{
+            color: black;
+            text-decoration: none;
+            border-color:2px solid olive;
+        }
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title{
+            font-style: underline;
+            color: #0A5C36;
+            position: relative;
+            top: 150px;
+            font-size: xx-large;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .domain{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+        .layout{
+            position: relative;
+            top: 250px;
+            background-color: whitesmoke;
+            border: 2px solid #0A5C36;
+            width: 400px;
+            height: 200px;
+            border-radius: 20px; /* Corrected the border-radius */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #farm{
+            background-image: url();
+            background-position: center;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+        }
+        #consumerpic{
+            position: relative;
+            left: 15px;
+            width: 60px;
+            height: 50px;
+        }
+        .portion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;
+        }
+        .txtfarm{
+            position: relative;
+            left: -5px;
+        }
+        .txtconsumer{
+            position: relative;
+            left: -4px;
+        }
+        .layout:hover{
+            transition: transform 0.1s ease-in;
+            transform: scale(1.02);
+        }
+        .custom-button {
+            position: relative;
+            top: 300px;
+            padding: 12px 24px;
+            font-size: 16px;
+            color: white;
+            background-color: #0A5C36;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+        .custom-button:hover {
+            background-color:olive;
+            transform: scale(1.05);
+        }
+        .custom-button:active {
+            background-color: olive;
+            transform: scale(0.95);
+        }
+.text{
+    position: relative;
+    top: 280px;
+    left: 650px;
+    
+}
+        
+    </style>
+</head>
+<body>
+
+<div class="head">
+    
+    <div class="title-portion">
+        <img style="width: 80px; height: 80px;" class="title-logo" src="https://www.pngplay.com/wp-content/uploads/6/Agriculture-Green-Icon-PNG.png" alt="">
+        <div style="font-style: underline;" class="title">Select the Category</div>
+    </div>
+
+    <div class="domain">
+        <a class="layoutClick" href="Farmer-login-page.html">  
+            <div class="layout" id="farm">
+                <div class="portion">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbf2Lb-mDTCSsnTyXHO3D3p9uasolKGUfSmQ&s" alt="">
+                    <div class="txtfarm">Farmer</div>
+                </div>
+            </div>
+        </a>
+
+        <a class="layoutClick layoutClick-consumer" href="Consumer-login-page.html">
+            <div class="layout" id="consumer">
+                <div class="portion">
+                    <img id="consumerpic" src="https://png.pngitem.com/pimgs/s/302-3023902_business-icons-icons8-consumer-icon-png-transparent-png.png" alt="">
+                    <div class="txtconsumer">Consumer</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Adding a custom button -->
+    <div class="images">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPglFWHmNCiRNH2UraI4tPrb4Ci1N1FSMAbYrCUlwF7vf86Lfl82AjFnqD81LyOAdffkw&usqp=CAU" alt="">
+    </div>
+     <img id="leaf3" src="https://static.vecteezy.com/system/resources/previews/024/837/217/original/green-color-of-tractor-icon-in-half-shadow-vector.jpg" alt="">
+ 
+</div>
+
+
+<style>
+
+    #leaf1{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top:-399px;
+        left: -488px;
+    }
+    #leaf3{
+        width: 80px;
+        height: 50px;
+        position: relative;
+      top: -160px;
+      left: -206px;
+}
+    
+    #leaf4{
+        width: 200px;
+    height: 200px;
+    position: relative;
+    top: -493px;
+    left: -666px;
+}
+    
+   
+
+
+</style>
+
+</body>
+</html>
